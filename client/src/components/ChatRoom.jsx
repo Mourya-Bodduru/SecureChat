@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 import { v4 as uuidv4 } from 'uuid';
 import { generateRoomHash, encryptMessage, decryptMessage } from '../utils/crypto';
 
-const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'https://secure-chat-xyz.vercel.app/';
+const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
 const formatDateSeparator = (timestamp) => {
   const date = new Date(timestamp);
